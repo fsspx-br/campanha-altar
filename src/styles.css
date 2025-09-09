@@ -22,7 +22,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('altar.png') center/contain no-repeat;
+  background: var(--altar-image) center/contain no-repeat;
   opacity: 0.3;
 }
 
@@ -30,7 +30,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('altar.png') center/contain no-repeat;
+  background: var(--altar-image) center/contain no-repeat;
   mask-image: linear-gradient(
     to top,
     black var(--reveal-percentage, 0%),

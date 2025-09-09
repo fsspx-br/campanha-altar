@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { AltarData } from './AltarData'
+import altarImage from './altar.png'
 import './styles.css'
 
 function App() {
@@ -51,7 +52,10 @@ function App() {
       <div className="altar-container">
         <div 
           className="altar-background"
-          style={{ '--reveal-percentage': `${altarData.getPercentage()}%` }}
+          style={{ 
+            '--reveal-percentage': `${altarData.getPercentage()}%`,
+            '--altar-image': `url(${altarImage})`
+          }}
         >
           {altarData.pixQrCodeImage ? (
             <img src={altarData.pixQrCodeImage} alt="Pix" />
